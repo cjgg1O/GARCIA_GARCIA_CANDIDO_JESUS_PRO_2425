@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.balones {
+  display: flex;
+  align-items: center;
+  background-image: radial-gradient(
+    rgb(55, 65, 81),
+    rgb(17, 24, 39),
+    rgb(0, 0, 0)
+  );
+  border: 10px solid;
+  border-radius: 50px;
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+model-viewer {
+  max-height: 41vw;
+  min-height: 40vw;
+  height: 500px;
+  width: 500px;
+}

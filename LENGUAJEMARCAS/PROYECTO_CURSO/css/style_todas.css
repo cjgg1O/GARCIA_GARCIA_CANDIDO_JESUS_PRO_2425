@@ -1,0 +1,235 @@
+/* Fuentes de letra */
+@font-face {
+  font-family: "Din-Condensed";
+  src: url(../fuentes/DIN-Condensed-Bold.ttf);
+}
+/* Fin fuentes de letra */
+
+/* Personalizacion principal de la pagina (Esto va tambien para todas las subpaginas)*/
+* {
+  font-family: "Din-Condensed";
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 0;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    rgb(217, 218, 221),
+    rgb(132, 138, 148),
+    rgb(58, 66, 77)
+  );
+  background-attachment: fixed;
+}
+
+header {
+  position: fixed;
+  background-color: rgb(31, 31, 31);
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid;
+  border-image: radial-gradient(
+      rgb(229, 231, 235),
+      rgb(156, 163, 175),
+      rgb(75, 85, 99)
+    )
+    1;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgb(107, 114, 128),
+    rgb(0, 0, 0)
+  );
+  z-index: 1000;
+}
+
+.tituloalbarregas {
+  position: fixed;
+  color: white;
+  left: 15vw;
+  font-size: 80px;
+  font-family: "Din-Condensed";
+}
+
+.tituloalautos {
+  position: fixed;
+  color: white;
+  right: 20vw;
+  font-size: 80px;
+  font-family: "Din-Condensed";
+}
+
+footer {
+  position: relative;
+  height: 100px;
+  width: 100.6%;
+  bottom: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-bottom: -8px;
+  margin-right: -8px;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #f4f4f4;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  padding: 20px 0;
+  z-index: 500;
+  border-top: 4px solid;
+  border-image: linear-gradient(
+      to right,
+      rgb(243, 244, 246),
+      rgb(209, 213, 219),
+      rgb(243, 244, 246)
+    )
+    1;
+  transition: 0.2s ease-in;
+}
+
+footer:hover {
+  border-image: linear-gradient(
+      to right,
+      rgb(114, 144, 192),
+      rgb(50, 71, 114),
+      rgb(114, 144, 192)
+    )
+    1;
+}
+
+footer a {
+  position: relative;
+  bottom: -25px;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  transition: 0.2s ease-in;
+  border-left: #33333300 1px solid;
+  border-right: #33333300 1px solid;
+}
+
+footer a:hover {
+  border-left: #33333396 1px solid;
+  border-right: #33333396 1px solid;
+  background-image: linear-gradient(
+    to right,
+    rgb(165, 182, 210),
+    rgb(19, 59, 140),
+    rgb(165, 182, 210)
+  ); /* Imagen para el texto al hacer hover */
+  background-size: cover; /* Ajusta la imagen al tamaño del texto */
+  background-clip: text; /* Aplica la imagen solo al texto */
+  color: transparent;
+}
+
+/* Personalizacion anuncios */
+.anuncios-all {
+  position: relative;
+  top: 185px;
+  left: 50.75%;
+  margin-bottom: 24vw;
+  margin-top: 5vw;
+  transform: translateX(-50%);
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 9%; /* Solo afecta la separación entre filas */
+  column-gap: 1.07%; /* Asegura que no haya separación entre columnas */
+}
+
+.anuncios {
+  background-color: white;
+  width: 23vw;
+  height: 25vw;
+  margin-bottom: -4vw;
+  overflow: hidden;
+  display: inline;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.anuncios:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.anuncios p {
+  position: relative;
+  display: flex;
+  top: 5px;
+  margin-bottom: -5px !important;
+  color: #333;
+  font-size: 21px;
+  left: -5px;
+  margin: 10px;
+}
+
+p.derecha {
+  position: relative;
+  float: right;
+  margin-top: -18px;
+  top: 4px;
+}
+
+.anuncios > a > div > img {
+  position: relative;
+  width: 23.01vw;
+  display: block;
+  margin: 0 auto;
+  border-left: 1px solid rgba(0, 0, 0, 0);
+  border-right: 1px solid rgba(0, 0, 0, 0);
+}
+.anuncios > a > p > img {
+  position: relative;
+  top: -5px;
+  left: 10px;
+  width: 35px !important;
+}
+
+.carrusel {
+  display: flex;
+  position: relative;
+  padding: 0;
+  width: 400%;
+  animation: slide infinite 15s cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+
+@keyframes slide {
+  0% {
+    margin-left: -0.15%;
+  }
+  20% {
+    margin-left: -0.15%;
+  }
+
+  25% {
+    margin-left: -100.7%;
+  }
+  45% {
+    margin-left: -100.7%;
+  }
+
+  50% {
+    margin-left: -201.2%;
+  }
+  70% {
+    margin-left: -201.2%;
+  }
+
+  75% {
+    margin-left: -301.8%;
+  }
+  100% {
+    margin-left: -301.8%;
+  }
+}
+/* Fin presonalización de los anuncios */
+
+/* Fin personalizacion principal de la pagina */

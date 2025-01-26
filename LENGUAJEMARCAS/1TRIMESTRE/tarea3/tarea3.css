@@ -1,0 +1,44 @@
+html {
+    background-color: rgb(36, 36, 36);
+}
+
+.youtube-container{
+    width: 300px;
+    height: 300px;
+}
+
+.youtube {
+   border: 5%;
+   border-radius: 0px;
+   border-color: white;
+   
+   transition: 0.3s ease;
+}
+
+.youtube:hover { 
+    border-radius: 10px;
+    border-color: red;
+    border: 30%;
+}
+
+.youtube-container.hover {
+    content: url(./png/youtube-logo_gris.png);
+}
+
+#caja1 {
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cajita {
+    width: 90px;
+    height: 90px;
+    background-color: blueviolet;
+    display: flex;
+    margin: auto;
+}

@@ -1,0 +1,42 @@
+* {
+  list-style: none;
+  font-family: "Din-Condensed";
+  text-decoration: none;
+}
+
+div.inicio {
+  position: fixed;
+  z-index: 1000;
+  top: 120px;
+  left: 0.7vw;
+  list-style: none;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  height: 8px;
+  width: auto;
+  background-size: 0% 100%;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    to left,
+    rgba(229, 231, 235, 0),
+    rgba(156, 163, 175, 0.221),
+    rgba(0, 0, 0, 0.245)
+  );
+  transition: 0.3s ease;
+  background-repeat: no-repeat;
+}
+
+div.inicio:hover {
+  background-size: 100% 100%;
+}
+
+div.inicio > a > img {
+  position: relative;
+  display: flex;
+  top: -15px;
+  margin-left: auto;
+  height: 40px;
+}

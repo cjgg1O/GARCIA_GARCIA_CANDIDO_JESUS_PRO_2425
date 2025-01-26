@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "Doboto";
+  src: url(./FUENTES-LETRA/Doboto/Doboto\ Bold.ttf);
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url(./FUENTES-LETRA/Lexend/static/Lexend-Regular.ttf);
+}
+
+html {
+  background-image: url(./PNG/fondo_main.png);
+  background-size: cover;
+  background-color: rgb(38, 38, 38);
+}
+
+body {
+  margin: 0;
+  padding-top: 4pc;
+}
+
+header {
+  position: fixed;
+  background-color: rgb(23, 23, 23);
+  top: 0%;
+  padding-top: 0.3%;
+  color: white;
+  width: 100%;
+  margin-top: 0%;
+  left: 0%;
+  height: 4.8pc;
+  border-bottom: 0.15pc solid white;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.tledll {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 1pc;
+  font-size: 2pc;
+  text-align: center;
+}
+
+.divrojoathletic {
+  position: absolute;
+  width: 12.7pc;
+  height: 19pc;
+  margin-left: 5pc;
+  margin-right: 77pc;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5pc;
+  background-image: url(./PNG/fondo-rojo.png);
+  border-radius: 2%;
+}
+
+.divrojoatletico {
+  position: absolute;
+  width: 12.7pc;
+  height: 19pc;
+  left: 14.5%;
+  margin-left: 5pc;
+  margin-right: 77pc;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5pc;
+  background-image: url(./PNG/fondo-rojo.png);
+  border-radius: 2%;
+}
+
+.divrojoosasuna {
+  position: absolute;
+  width: 12.7pc;
+  left: 29%;
+  height: 19pc;
+  margin-left: 5pc;
+  margin-right: 77pc;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5pc;
+  background-image: url(./PNG/fondo-rojo.png);
+  border-radius: 2%;
+}
+
+.divazulleganes {
+  position: absolute;
+  width: 12.7pc;
+  left: 43.5%;
+  height: 19pc;
+  margin-left: 5pc;
+  margin-right: 77pc;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5pc;
+  background-image: url(./PNG/fondo-azul.png);
+  border-radius: 2%;
+}
+
+.divazulalaves {
+  position: absolute;
+  width: 12.7pc;
+  left: 58%;
+  height: 19pc;
+  margin-left: 5pc;
+  margin-right: 77pc;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5pc;
+  background-image: url(./PNG/fondo-azul.png);
+  border-radius: 2%;
+}
+
+.divequipos {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.divequipos:hover {
+  opacity: 0.5;
+}
+
+.span1equipo {
+  position: absolute;
+  left: 16%;
+  top: 23.5%;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.4pc;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span1equipoatletico {
+  position: absolute;
+  left: 3%;
+  top: 23.5%;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.4pc;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span1equipoosasuna {
+  position: absolute;
+  left: 21.5%;
+  top: 23.5%;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.4pc;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span1equipoleganes {
+  position: absolute;
+  left: 23.5%;
+  top: 23.5%;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.4pc;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span1equipoalaves {
+  position: absolute;
+  left: 8.5%;
+  top: 23.5%;
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.4pc;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span2equipo {
+  position: absolute;
+  top: 31.5%;
+  left: 23%;
+  font-family: url("./FUENTES-LETRA/Doboto/Doboto\ Bold.ttf");
+  color: white;
+  font-family: "Doboto";
+  font-weight: bold;
+  font-size: 1pc;
+  margin-top: 0%;
+  padding-top: 0%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span3equipo {
+  position: absolute;
+  left: 6%;
+  top: 91%;
+  color: white;
+  font-family: "Lexend";
+  font-size: 0.98pc;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span3atletico {
+  position: absolute;
+  left: 6%;
+  top: 91%;
+  color: white;
+  font-family: "Lexend";
+  font-size: 0.98pc;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.span3osasuna {
+  position: absolute;
+  left: 0%;
+  top: 91%;
+  color: white;
+  font-family: "Lexend";
+  font-size: 0.98pc;
+  font-weight: bold;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.escudos {
+  width: 3pc;
+  padding-top: 10%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.escudosheader1 {
+  position: absolute;
+  padding-top: 0.4pc;
+  padding-bottom: 0.4pc;
+  width: 3.5pc;
+  left: 1%;
+}
+
+.escudosheader2 {
+  position: absolute;
+  padding-top: 0.4pc;
+  padding-bottom: 0.4pc;
+  height: 4pc;
+  left: 5%;
+}
+
+.escudosheader3 {
+  position: absolute;
+  top: 0%;
+  padding-bottom: 0.4pc;
+  height: 5pc;
+  left: 9%;
+}
+
+.escudosheader4 {
+  position: absolute;
+  padding-top: 0.4pc;
+  padding-bottom: 0.4pc;
+  height: 4pc;
+  left: 14.5%;
+}
+
+.escudosheader5 {
+  position: absolute;
+  padding-top: 0.4pc;
+  padding-bottom: 0.4pc;
+  height: 4pc;
+  left: 19.5%;
+}
+
+.escudosath {
+  width: 3.3pc;
+  padding-top: 10%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.escudososasuna {
+  width: 4.5pc;
+  padding-top: 3%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.escudosleganes {
+  position: absolute;
+  width: 3.6pc;
+  top: 4.5%;
+  left: 35%;
+  padding-top: 3%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.escudosalaves {
+  position: absolute;
+  width: 3.6pc;
+  top: 2.5%;
+  left: 35%;
+  padding-top: 3%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.estadios {
+  width: 85%;
+  margin-top: 10%;
+  margin-bottom: 40%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.estadiosatl {
+  position: absolute;
+  width: 85%;
+  top: 48%;
+  left: 7%;
+  margin-top: 10%;
+  margin-bottom: 40%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.estadiososasuna {
+  position: absolute;
+  width: 85%;
+  top: 38%;
+  left: 7%;
+  margin-top: 10%;
+  margin-bottom: 40%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.estadiosleganes {
+  position: absolute;
+  width: 85%;
+  top: 45%;
+  left: 7%;
+  margin-top: 10%;
+  margin-bottom: 40%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.divequipos:hover {
+  opacity: 0.5;
+}

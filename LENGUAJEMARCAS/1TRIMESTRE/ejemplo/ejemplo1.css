@@ -1,0 +1,14 @@
+.empresa {
+    color: red;
+    text-align: justify;
+}
+
+#menuhorizontal ul li {
+    display: inline;
+    padding: 2px 7px;
+    margin: 5px;
+    background-color: #800080;
+    color: white;
+    font-family: "Comic Sans Ms";
+    font-size: 20px;
+}
