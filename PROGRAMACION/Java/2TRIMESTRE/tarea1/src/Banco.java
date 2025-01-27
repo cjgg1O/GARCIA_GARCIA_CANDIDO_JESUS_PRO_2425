@@ -62,10 +62,10 @@ public class Banco {
         for (CuentaCorriente cc : listadoCuentasCorrientes) {
             if (cc.getIban() == iban) {
                 listadoCuentasCorrientes.remove(cc);
-                return "Cuenta creada: " + true;
+                return "Cuenta borrada: " + true;
             }
         }
-        return "Cuenta creada" + false;
+        return "Cuenta borrada" + false;
     }
 
     public void traspasarCuenta(long iban, Cliente destinatario) {

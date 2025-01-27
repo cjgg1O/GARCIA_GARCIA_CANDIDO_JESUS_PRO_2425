@@ -3,34 +3,58 @@ import java.util.ArrayList;
 public class Carrera {
     private String nombre, facultad;
     private ArrayList<Carrera> coleccionCarreras = new ArrayList<Carrera>();
+    private ArrayList<Materia> coleccionMaterias = new ArrayList<Materia>();
 
-    public Carrera(String nombre,String facultad, ArrayList<Carrera> coleccionCarreras) {
+    public Carrera(String nombre, String facultad, ArrayList<Carrera> coleccionCarreras) {
         this.nombre = nombre;
         this.facultad = facultad;
         this.coleccionCarreras = coleccionCarreras;
     }
 
     public void agregarMateria(Materia materia) {
-        materia = new Materia();
-        listaMaterias.add(materia);
+        coleccionMaterias.add(materia);
     }
 
     public void eliminarMateria(Materia materia) {
-        listaMaterias.remove(materia);
+        for (Materia materia2 : coleccionMaterias) {
+            if (materia.equals(materia2)) {
+                coleccionMaterias.remove(materia2);
+            } else {
+                System.out.println("No se ha encotnrado la materia seleccionada");
+            }
+        }
     }
 
     public int contarMaterias() {
-        return listaMaterias.size();
+        return coleccionMaterias.size();
     }
 
-    public int encontrarMateria(Materia materia) {
-        int posicion = 0;
-        for (Materia encontrar : listaMaterias) {
-            if (encontrar.equals(materia)) {
-                return posicion;
+    public Materia encontrarMateria(String nombreMateria) {
+        for (Materia materia : coleccionMaterias) {
+            if (materia.getNombre().equals(nombreMateria)) {
+                return materia;
+            } else {
+                System.out.println("No se ha encontrado la materia seleccionada");
             }
-            posicion++;
         }
-        return -1;
+        return null;
+    }
+
+    public void crearColeccion() {
+        this.coleccionCarreras = new ArrayList<Carrera>();
+    }
+
+    public void agregarCarrera(Carrera carrera) {
+        coleccionCarreras.add(carrera);
+    }
+
+    public void eliminarCarrera(Carrera carrera) {
+        for (Carrera carrera2 : coleccionCarreras) {
+            if (carrera.equals(carrera2)) {
+                coleccionCarreras.remove(carrera2);
+            } else {
+                System.out.println("No se ha encontrado la carrera seleccionada");
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
-public class Alumno {
+public class Alumno extends Persona {
+    private String nombre;
 
-    public Alumno() {
-        
+    public Alumno(String nombre) {
+        this.nombre = nombre;
     }
 }
-
