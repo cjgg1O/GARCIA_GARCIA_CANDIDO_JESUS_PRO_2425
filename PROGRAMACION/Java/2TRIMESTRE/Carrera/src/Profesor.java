@@ -4,6 +4,7 @@ public class Profesor extends Persona {
     private int antiguedad;
 
     public Profesor(String nombre, double basico, int antiguedad) {
+        super();
         this.nombre = nombre;
         this.basico = basico;
         this.antiguedad = antiguedad;

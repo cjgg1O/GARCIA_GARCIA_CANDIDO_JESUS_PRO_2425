@@ -7,13 +7,22 @@ public class Materia {
     private ArrayList<Alumno> coleccionAlumnos = new ArrayList<Alumno>();
     private ArrayList<Asistencia> coleccionAsistencias = new ArrayList<Asistencia>();
 
-    public Materia(String nombre, Profesor titular) {
+    public Materia(String nombre, Profesor titular, ArrayList<Alumno> coleccionAlumnos) {
         this.nombre = nombre;
         this.titular = titular;
+        this.coleccionAlumnos = coleccionAlumnos;
     }
 
     public String getNombre() {
         return nombre;
+    }
+    
+    public Profesor getTitular() {
+        return titular;
+    }
+
+    public ArrayList<Alumno> getColeccionAlumnos() {
+        return coleccionAlumnos;
     }
 
     public void agregarAlumno(Alumno alumno) {

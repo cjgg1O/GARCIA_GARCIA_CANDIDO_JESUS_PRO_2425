@@ -5,10 +5,18 @@ public class Carrera {
     private ArrayList<Carrera> coleccionCarreras = new ArrayList<Carrera>();
     private ArrayList<Materia> coleccionMaterias = new ArrayList<Materia>();
 
-    public Carrera(String nombre, String facultad, ArrayList<Carrera> coleccionCarreras) {
+    public Carrera(String nombre, String facultad, ArrayList<Materia> coleccionMaterias) {
         this.nombre = nombre;
         this.facultad = facultad;
-        this.coleccionCarreras = coleccionCarreras;
+        this.coleccionMaterias = coleccionMaterias;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getFacultad() {
+        return facultad;
     }
 
     public void agregarMateria(Materia materia) {
@@ -56,5 +64,11 @@ public class Carrera {
                 System.out.println("No se ha encontrado la carrera seleccionada");
             }
         }
+    }
+
+    public String infoMateria(Materia materia) {
+        return "La materia " + materia.getNombre() + " pertenece a la carrera de " + this.nombre
+                + " el profesor que imparte la materia es " + materia.getTitular()
+                + " los alumnos que están matriculados en esta materia son " + materia.getColeccionAlumnos();
     }
 }
