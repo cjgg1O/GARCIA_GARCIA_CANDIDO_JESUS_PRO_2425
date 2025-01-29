@@ -6,23 +6,13 @@ body {
   margin: 0;
 }
 
-.balones {
-  display: flex;
-  align-items: center;
-  background-image: radial-gradient(
-    rgb(55, 65, 81),
-    rgb(17, 24, 39),
-    rgb(0, 0, 0)
-  );
-  border: 10px solid;
-  border-radius: 50px;
-  padding-right: 20vw;
-  padding-left: 20vw;
+.conainer-carousel {
+  width: 500px;
+  height: 300px;
+  background-color: darkgrey;
+  box-shadow: 0 8 32px 0 rgba(0,0,0, 0.66);
 }
 
-model-viewer {
-  max-height: 41vw;
-  min-height: 40vw;
-  height: 500px;
+.slider-section model-viewer {
   width: 500px;
 }
