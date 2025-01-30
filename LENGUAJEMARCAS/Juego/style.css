@@ -20,7 +20,7 @@ body {
 }
 
 .container .wrapper {
-  width: 60vw;
+  width: 65vw;
   height: 75vh;
   box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.6);
   margin: 5vh auto;
