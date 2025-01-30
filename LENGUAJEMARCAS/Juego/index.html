@@ -7,100 +7,20 @@
     <title>Juego</title>
   </head>
   <body>
-    <div class="container-carousel">
-      <div class="carruseles">
-        <section class="slider-section">
-          <model-viewer
-            src="./props/pelotas/default-basket-ball.glb"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            tone-mapping="neutral"
-            poster="poster.webp"
-            shadow-intensity="0"
-            auto-rotate
-          >
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
-            <div id="ar-prompt">
-              <img src="" />
-            </div>
-          </model-viewer>
-        </section>
-        <section class="slider-section">
-          <model-viewer
-            src="./props/pelotas/spalding-basket-ball.glb"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            tone-mapping="neutral"
-            poster="poster.webp"
-            shadow-intensity="0"
-            auto-rotate
-          >
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
-            <div id="ar-prompt">
-              <img src="" />
-            </div>
-          </model-viewer>
-        </section>
-        <section class="slider-section">
-          <model-viewer
-            src="./props/pelotas/adidas-basket-ball.glb"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            tone-mapping="neutral"
-            poster="poster.webp"
-            shadow-intensity="0"
-            auto-rotate
-          >
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
-            <div id="ar-prompt">
-              <img src="" />
-            </div>
-          </model-viewer>
-        </section>
-        <section class="slider-section">
-          <model-viewer
-            src="./props/pelotas/lakers-basket-ball.glb"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            tone-mapping="neutral"
-            poster="poster.webp"
-            shadow-intensity="0"
-            auto-rotate
-          >
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
-            <div id="ar-prompt">
-              <img src="" />
-            </div>
-          </model-viewer>
-        </section>
-        <section class="slider-section">
-          <model-viewer
-            src="./props/pelotas/jordan-basket-ball.glb"
-            ar
-            ar-modes="webxr scene-viewer quick-look"
-            tone-mapping="neutral"
-            poster="poster.webp"
-            shadow-intensity="0"
-            auto-rotate
-          >
-            <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-            </div>
-            <div id="ar-prompt">
-              <img src="" />
-            </div>
-          </model-viewer>
-        </section>
-        <div class="btn-izquierda"></div>
-        <div class="btn-derecha"></div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="wrapper-holder">
+          <div id="slider-model-1"></div>
+          <div id="slider-model-2"></div>
+          <div id="slider-model-3"></div>
+          <div id="slider-model-4"></div>
+        </div>
+      </div>
+      <div class="buttom-holder">
+        <a href="#slider-model-1" class="buttom"></a>
+        <a href="#slider-model-2" class="buttom"></a>
+        <a href="#slider-model-3" class="buttom"></a>
+        <a href="#slider-model-4" class="buttom"></a>
       </div>
     </div>
     <script type="module" src="./importar3D.js"></script>
