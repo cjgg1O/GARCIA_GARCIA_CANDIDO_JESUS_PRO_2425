@@ -5,4 +5,8 @@ public class Alumno extends Persona {
         super();
         this.nombre = nombre;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
 }

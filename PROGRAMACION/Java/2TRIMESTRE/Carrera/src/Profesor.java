@@ -10,6 +10,7 @@ public class Profesor extends Persona {
         this.antiguedad = antiguedad;
     }
 
+
     // public double calcularSueldo() {
        
     // }

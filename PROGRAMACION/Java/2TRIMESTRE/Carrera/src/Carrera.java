@@ -66,9 +66,10 @@ public class Carrera {
         }
     }
 
-    public String infoMateria(Materia materia) {
-        return "La materia " + materia.getNombre() + " pertenece a la carrera de " + this.nombre
-                + " el profesor que imparte la materia es " + materia.getTitular()
-                + " los alumnos que están matriculados en esta materia son " + materia.getColeccionAlumnos();
+    public String infoCarrera() {
+        for (int i = 0; i< coleccionCarreras.size(); i++) {
+            return coleccionCarreras.get(i).getNombre();
+        }
+        return null;
     }
 }

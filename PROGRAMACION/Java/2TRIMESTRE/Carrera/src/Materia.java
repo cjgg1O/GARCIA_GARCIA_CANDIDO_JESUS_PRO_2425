@@ -14,9 +14,9 @@ public class Materia {
     }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
-    
+
     public Profesor getTitular() {
         return titular;
     }
@@ -62,5 +62,9 @@ public class Materia {
             }
         }
         return 0;
+    }
+
+    public String infoMateria() {
+        return materia.getNombre()
     }
 }
