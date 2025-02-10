@@ -10,6 +10,18 @@ public class Profesor extends Persona {
         this.antiguedad = antiguedad;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getBasico() {
+        return basico;
+    }
+
+    public int getAntiguedad() {
+        return antiguedad;
+    }
+
     public double calcularSueldo() {
         double sueldo = basico;
         for (int i = 0; i < antiguedad; i += 5) {

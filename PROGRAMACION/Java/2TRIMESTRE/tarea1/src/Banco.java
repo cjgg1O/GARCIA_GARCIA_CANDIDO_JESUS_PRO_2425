@@ -75,4 +75,10 @@ public class Banco {
             }
         }
     }
+
+    // public static Banco fusionarBancos(Banco banco1, Banco banco2) {
+    //     String nuevoNombre = banco1.getNombre() + " y " + banco2.getNombre();
+    //     ArrayList<CuentaCorriente> nuevoListadoCuentasCorrientes = new ArrayList<CuentaCorriente>();
+    //     nuevoListadoCuentasCorrientes = banco1.getListadoCuentasCorrientes() + banco2.getListadoCuentasCorrientes();
+    // }
 }
