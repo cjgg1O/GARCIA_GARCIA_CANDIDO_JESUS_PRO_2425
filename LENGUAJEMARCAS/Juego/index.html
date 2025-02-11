@@ -1,103 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <title>Juego</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="wrapper">
-        <div id="boton-izquierda"></div>
-        <div id="wrapper-holder">
-          <div id="slider-model">
-            <model-viewer
-              src="./props/pelotas/default-basket-ball.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              tone-mapping="neutral"
-              poster="poster.webp"
-              shadow-intensity="0"
-              auto-rotate
-            >
-              <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-              </div>
-              <div id="ar-prompt">
-                <img src="" />
-              </div>
-            </model-viewer>
-            <model-viewer
-              src="./props/pelotas/spalding-basket-ball.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              tone-mapping="neutral"
-              poster="poster.webp"
-              shadow-intensity="0"
-              auto-rotate
-            >
-              <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-              </div>
-              <div id="ar-prompt">
-                <img src="" />
-              </div>
-            </model-viewer>
-            <model-viewer
-              src="./props/pelotas/adidas-basket-ball.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              tone-mapping="neutral"
-              poster="poster.webp"
-              shadow-intensity="0"
-              auto-rotate
-            >
-              <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-              </div>
-              <div id="ar-prompt">
-                <img src="" />
-              </div>
-            </model-viewer>
-            <model-viewer
-              src="./props/pelotas/lakers-basket-ball.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              tone-mapping="neutral"
-              poster="poster.webp"
-              shadow-intensity="0"
-              auto-rotate
-            >
-              <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-              </div>
-              <div id="ar-prompt">
-                <img src="" />
-              </div>
-            </model-viewer>
-            <model-viewer
-              src="./props/pelotas/jordan-basket-ball.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              tone-mapping="neutral"
-              poster="poster.webp"
-              shadow-intensity="0"
-              auto-rotate
-            >
-              <div class="progress-bar hide" slot="progress-bar">
-                <div class="update-bar"></div>
-              </div>
-              <div id="ar-prompt">
-                <img src="" />
-              </div>
-            </model-viewer>
-          </div>
-        </div>
-        <div id="boton-derecha"></div>
-      </div>
-    </div>
-    <script type="module" src="./script/importar3D.js"></script>
-    <script src="./script/slider.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JUEGO</title>
+</head>
+<body>
+
+  <script src="./scripts/phaser.js"></script>
+  <script src="./scripts/script.js" type="module"></script>
+  
+</body>
 </html>
