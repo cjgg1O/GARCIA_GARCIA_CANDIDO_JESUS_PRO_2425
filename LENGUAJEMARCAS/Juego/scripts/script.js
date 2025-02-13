@@ -1,9 +1,9 @@
-import { Game } from './game.js';
+import { Game } from "./game.js";
 
 const config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 500,
+  width: window.innerWidth,
+  height: window.innerHeight,
   scene: [Game],
   physics: {
     default: "arcade",
@@ -15,3 +15,7 @@ const config = {
 };
 
 var game = new Phaser.Game(config);
+
+window.addEventListener("resize", () => {
+  game.scale.resize(window.innerWidth, window.innerHeight);
+});
