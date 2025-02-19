@@ -14,7 +14,7 @@ public class App {
         ciencia.agregarMateria(naturales);
         naturales.agregarAlumno(candi);
         naturales.agregarAlumno(carlos);
-
+        
         System.out.println(ciencia.infoCarrera());
         System.out.println(naturales.infoMateria());
     }

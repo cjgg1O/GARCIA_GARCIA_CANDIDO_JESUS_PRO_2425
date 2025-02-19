@@ -66,10 +66,10 @@ public class Carrera {
         }
     }
 
-    public String infoCarrera() {
-        for (int i = 0; i< coleccionCarreras.size(); i++) {
-            return coleccionCarreras.get(i).getNombre();
-        }
-        return null;
-    }
+    // public String infoCarrera() {
+    //     for (int i = 0; i < coleccionCarreras.size(); i++) {
+    //         return coleccionCarreras.get(i).getNombre();
+    //     }
+    //     return null;
+    // }
 }
